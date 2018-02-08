@@ -27,7 +27,7 @@ I made a `whole page
 
 plans
 -----
-        *Note: this will likely be out-of-date. Last updated: 18-01-29*
+*Note: this will likely be out-of-date. Last updated: 18-01-29*
 
 - A operating system builder for Linux (and maybe, eventually, kFreeBSD). It'd
   have a concept of 'packages': it would be built with a Makefile, and you
