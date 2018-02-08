@@ -14,13 +14,13 @@ check:
 	@echo | svgo 2>/dev/null >/dev/null || (echo "error: svgo missing! is it installed?" && exit 1) || exit 1
 	@echo | convert --version 2>/dev/null >/dev/null || (echo "error: convert missing! is it installed?" && exit 1) || exit 1
 
-$(HTML):
-	rst2html $(@:.html=.rst) $@ --stylesheet=main.css --title=`grep '$@' titles.txt | cut -d'	' -f2`
+$(HTML): $(RST)
+	rst2html $(@:.html=.rst) $@ --template=template.html --stylesheet=main.css --title=`grep '$@' titles.txt | cut -d'	' -f2`
 
-$(SVGD):
+$(SVGD): $(SVG)
 	svgo --quiet $(@:.svg=_.svg) -o $@
 
-$(PNG):
+$(PNG): $(SVG)
 	convert $(@:.png=_.svg) $@
 
 .PHONY: site clean check
