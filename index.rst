@@ -3,6 +3,10 @@ thatlittlegit
 Hi! I'm thatlittlegit. I code a variety of projects, mainly in POSIX Shell,
 AWK, C++, JavaScript and Java.
 
+I have a blog_!
+
+.. _blog: blog
+
 my setup
 ========
 As of 2018-01-01, I hex-booted six operating systems: Windows (unfortunately),
