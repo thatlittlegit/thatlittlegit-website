@@ -15,7 +15,7 @@ check:
 	@echo | convert --version 2>/dev/null >/dev/null || (echo "error: convert missing! is it installed?" && exit 1) || exit 1
 
 $(HTML): template.html main.css $(RST)
-	rst2html.py $(@:.html=.rst) $@ --template=template.html --stylesheet=main.css --title=`grep '$@' titles.txt | cut -d'	' -f2`
+	rst2html.py $(@:.html=.rst) $@ --template=template.html --stylesheet=main.css
 
 $(SVGD): $(SVG)
 	svgo --quiet $(@:.svg=_.svg) -o $@

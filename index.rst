@@ -1,3 +1,6 @@
+=============
+thatlittlegit
+=============
 thatlittlegit
 =============
 Hi! I'm thatlittlegit. I code a variety of projects, mainly in POSIX Shell,
