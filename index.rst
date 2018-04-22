@@ -60,10 +60,10 @@ plans
 
 contact me
 ==========
-Email me at `thatlittlegit@protonmail.com
-<mailto:thatlittlegit@protonmail.com>`_.
+Email me at `personal@thatlittlegit.tk
+<mailto:personal@thatlittlegit.tk>`_.
 
-PGP: http://pgp.mit.edu/pks/lookup?op=get&search=0x50F8158D2C508E24 (50F8158D2C508E24)
+PGP: https://pgp.mit.edu/pks/lookup?op=get&search=0xC7875577A697810C (C7875577A697810C)
 
 y no css bro?
 =============
