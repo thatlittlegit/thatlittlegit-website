@@ -1,20 +1,17 @@
-=============
-thatlittlegit
-=============
-thatlittlegit
-=============
+---
+title: thatlittlegit
+
+---
+
 Hi! I'm thatlittlegit. I code a variety of projects, mainly in POSIX Shell,
 AWK, C++, JavaScript and Java.
 
-I have a blog_!
+[I have a blog!](blog)
 
-.. _blog: blog
-
-my setup
-========
+## my setup
 As of 2018-01-01, I hex-booted six operating systems: Windows (unfortunately),
-Ubuntu, Manjaro, Debian, Arch and variant of `Cucumber Linux
-<https://cucumberlinux.com/>`_.
+Ubuntu, Manjaro, Debian, Arch and variant of
+[Cucumber Linux](https://cucumberlinux.com/).
 
 However, since I got a 2TB harddrive off
 Amazon, this has decreased - I currently have Windows, Ubuntu, Cucumber and
@@ -27,13 +24,10 @@ As for hardware, I have an Acer Aspire E1-572P, with an Intel Core i5-4200U
 and *Intel HD GRAPHIX!* It has 1TB of disk, though, and 12GB RAM, so it's
 not really that bad.
 
-my projects
-===========
-I made a `whole page
-<https://thatlittlegit.github.io/projects>`_ about my projects.
+## my projects
+I made a [whole page](https://thatlittlegit.github.io/projects) about my projects.
 
-plans
------
+### plans
 *Note: this will likely be out-of-date. Last updated: 18-01-29*
 
 - A operating system builder for Linux (and maybe, eventually, kFreeBSD). It'd
@@ -51,28 +45,16 @@ plans
 
         // ...
 
-- An `unhosted
-  <https://unhosted.org>`_ webapp.
-
+- An [unhosted](https://unhosted.org) webapp.
 - A decent M[TD]A.
 - A cryptocurrency in Rust. Trade 1 unit (let's say XAC) for 1 USD/CAD to
   keep a low price. Don't use proof-of work. Maybe proof-of-burn or whatever?
 
-contact me
-==========
-Email me at `personal@thatlittlegit.tk
-<mailto:personal@thatlittlegit.tk>`_.
+## contact me
+Email me at [personal@thatlittlegit.tk](mailto:personal@thatlittlegit.tk)
 
 PGP: https://pgp.mit.edu/pks/lookup?op=get&search=0xC7875577A697810C (C7875577A697810C)
 
-y no css bro?
-=============
-1. People who use `lynx
-   <https://lynx.invisible-island.net>`_ will thank me.
-2. It's simpler and smaller to download.
-3. I was actually considering plaintext. Be happy I did ReStructuredText to
-   HTML instead.
-
-----
+---
 
 Copyright 2018 thatlittlegit. Under MIT license.
