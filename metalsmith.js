@@ -3,6 +3,9 @@ const markdown = require('metalsmith-markdown');
 const layouts = require('metalsmith-layouts');
 const imagemin = require('metalsmith-imagemin');
 const index = require('metalsmith-index');
+const collections = require('metalsmith-collections');
+const renamer = require('metalsmith-renamer');
+const feed = require('metalsmith-feed');
 
 Metalsmith(__dirname)
 	.metadata({
@@ -23,15 +26,36 @@ Metalsmith(__dirname)
 			filename: 'index.html'
 		}
 	}))
+	.use(collections({
+		posts: {
+			pattern: 'blog/*.md',
+			sortBy: 'date',
+			reverse: true
+		}
+	}))
 	.use(markdown({
 		highlight(code, lang) {
 			return lang ? require('highlight.js').highlight(lang, code, false).value : code;
 		}
 	}))
+	.use(feed({
+		collection: 'posts',
+		site_url: 'https://thatlittlegit.tk',
+		title: 'thatlittlegit\'s blog'
+	}))
 	.use(layouts({
-		directory: '.',
-		default: 'template.hbs',
-		pattern: '*.html'
+		default: 'index.hbs',
+		pattern: '**/*.html'
+	}))
+	.use(renamer({
+		blogmd: {
+			pattern: 'blog/*.html',
+			rename: x => x === 'index.html' ? `./${x}` : `${x.replace('html', 'md')}/index.html`
+		},
+		rss: {
+			pattern: 'rss.xml',
+			rename: x => 'blog/feed.xml'
+		}
 	}))
 	.use(imagemin())
 	.build(err => {
