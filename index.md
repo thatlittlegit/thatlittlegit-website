@@ -51,10 +51,13 @@ I made a [whole page](https://thatlittlegit.github.io/projects) about my project
   keep a low price. Don't use proof-of work. Maybe proof-of-burn or whatever?
 
 ## contact me
-Email me at [personal@thatlittlegit.tk](mailto:personal@thatlittlegit.tk)
-
-PGP: https://pgp.mit.edu/pks/lookup?op=get&search=0xC7875577A697810C (C7875577A697810C)
+<p class="h-card">
+	To contact
+	<span class="p-sex p-gender-identity"><!--sneaky!-->m</span>e
+	(<a class="p-name p-nickname u-url" href="/">thatlittlegit</a>),
+	email
+	<a class="u-email u-uid" href="mailto:personal@thatlittlegit.tk">personal@thatlittlegit.tk</a>.
+	PGP: <a class="p-key" href="https://pgp.mit.edu/pks/lookup?op=get&search=0xC7875577A697810C">C7875577A697810C</a>
 
 ---
-
-Copyright 2018 thatlittlegit. Under MIT license.
+*Page licensed under the MIT license*
