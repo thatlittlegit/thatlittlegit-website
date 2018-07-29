@@ -12,7 +12,8 @@ Metalsmith(__dirname)
 		sitename: 'thatlittlegit',
 		siteurl: 'https://thatlittlegit.tk',
 		description: 'thatlittlegit\'s website',
-		generatorname: 'Metalsmith'
+		generatorname: 'Metalsmith',
+		title: 'index page' // all pages have a title except for index pages, so use this as a fallback.
 	})
 	.source('.')
 	.ignore('metalsmith.js')
