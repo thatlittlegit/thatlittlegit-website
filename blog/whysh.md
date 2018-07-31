@@ -116,21 +116,8 @@ Result: **44** lines of code (actually 54).
 #include <string.h>
 #include <stdbool.h>
 
-bool strsta(char* lego, char* tower) { // dont ask plz
-	if (strlen(lego) > strlen(tower)) return false;
-
-	int i;
-	for (i = 0; i < strlen(lego); i++) {
-		if (lego[i] != tower[i]) return false;
-	}
-
-	return true;
-}
-
-bool strcomp(char* str1, char* str2) { // never trust strcmp
-	if (strlen(str1) != strlen(str2)) return false;
-	return strsta(str1, str2);
-}
+#define strsta(x, y) strstr(x, y) - x == 0
+#define strcomp(x, y) strcmp(x, y) == 0
 
 int strcon(char needle, char* haystack) {
 	int i, ret = 0;
@@ -181,6 +168,7 @@ int main() {
 	free(chunk);
 
 	char* in = malloc(128);
+	fprintf(stderr, "phone> ");
 	while (fgets(in, 128, stdin)) {
 		if (strcomp(in, "q\n")) {
 			exit(0);
@@ -220,11 +208,12 @@ higher.");
 				}
 			}
 		}
+		fprintf(stderr, "phone> ");
 	}
 }
 ```
 
-Result: **49** lines of code (actually 114).
+Result: **84** lines of code (actually 103).
 
 ## Shell
 ```sh
