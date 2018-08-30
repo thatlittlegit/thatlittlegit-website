@@ -6,19 +6,12 @@ title: thatlittlegit
 Hi! I'm thatlittlegit. I code a variety of projects, mainly in POSIX Shell,
 AWK, C++, JavaScript and Java.
 
-[I have a blog!](blog)
-
 ## my setup
-As of 2018-01-01, I hex-booted six operating systems: Windows (unfortunately),
-Ubuntu, Manjaro, Debian, Arch and variant of
-[Cucumber Linux](https://cucumberlinux.com/).
+I have three operating systems: Windows 10 (which I almost never use), a
+variant of Cucumber Linux developed for a school project, and Debian (my daily
+driver).
 
-However, since I got a 2TB harddrive off
-Amazon, this has decreased - I currently have Windows, Ubuntu, Cucumber and
-Arch. (Manjaro and Arch are still in my GRUB menu, but an update-grub will
-remove them.) Ubuntu or Cucumber is going next. Ubuntu will be hard, though,
-since it's the GRUB partition. I plan to have GRUB not connected to any distro,
-on a separate /boot.
+I use [dwm](https://dwm.suckless.org) with [st](https://st.suckless.org) daily; I use [Atom](https://atom.io) and [NeoVim](https://neovim.org) for text editing and a Solarized theme.
 
 As for hardware, I have an Acer Aspire E1-572P, with an Intel Core i5-4200U
 and *Intel HD GRAPHIX!* It has 1TB of disk, though, and 12GB RAM, so it's
@@ -33,8 +26,8 @@ I made a [whole page](https://thatlittlegit.github.io/projects) about my project
 - A operating system builder for Linux (and maybe, eventually, kFreeBSD). It'd
   have a concept of 'packages': it would be built with a Makefile, and you
   may use command-line arguments and a config file to pick packages. For
-  example:::
-
+  example:
+  ```c
         PKGSRC(https://github.com/thatlittlegit/osb_pkgs)
 
         ALL_STAGES(binutils)
@@ -44,9 +37,9 @@ I made a [whole page](https://thatlittlegit.github.io/projects) about my project
         STAGE1(musl)
 
         // ...
+		```
 
 - An [unhosted](https://unhosted.org) webapp.
-- A decent M[TD]A.
 - A cryptocurrency in Rust. Trade 1 unit (let's say XAC) for 1 USD/CAD to
   keep a low price. Don't use proof-of work. Maybe proof-of-burn or whatever?
 
