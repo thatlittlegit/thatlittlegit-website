@@ -7,6 +7,8 @@ deploy:
   on:
     branch: master
 
+language: node_js
+
 script:
   - npm ci
   - node metalsmith.js
