@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>{{title}}</title>
+		<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' https://cdnjs.cloudflare.com; base-uri 'none'; form-action 'none'; frame-ancestors 'none';" />
+		<link rel="manifest" href="manifest.json" />
+		<link rel="stylesheet" href="/styles.css" />
+		
+		<!-- indieauth -->
+		<link rel="openid.delegate" href="https://thatlittlegit.tk/" />
+		<link rel="openid.server" href="https://openid.indieauth.com/openid" />
+		<link rel="pgpkey" href="/pgpkey.pub" />
+	</head>
+	<body>
+		<h1>{{title}}</h1>
+		{{{contents}}}
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css" integrity="sha384-zhIsEafzyQWHSoMCQ4BfT8ZlRXQyIFwAHAJn32PNdsb8n6tVysGZSLpEEIvCskw4" crossorigin="anonymous" defer />
+	</body>
+</html>
+

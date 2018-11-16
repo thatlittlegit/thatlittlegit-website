@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>blog</title>
+		<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';" />
+		<link rel="manifest" href="manifest.json" />
+		<link rel="stylesheet" href="/styles.css" />
+	</head>
+	<body>
+		<h1>blog</h1>
+		[<a href="/">home</a>]&nbsp;[<a href="feed.xml">rss</a>]
+
+		<ul>
+			{{#each collections.posts}}
+				<li><dl>
+					<dt>{{this.date}}</dt>
+					<dd><a href="/{{this.path}}">{{this.title}}</a></dd>
+				</dl></li>
+			{{/each}}
+		</ul>
+	</body>
+</html>
+
